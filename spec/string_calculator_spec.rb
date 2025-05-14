@@ -17,6 +17,10 @@ RSpec.describe StringCalculator do
     it 'return addition of numbers if seperated by commas' do 
       expect(StringCalculator.add("3,7,0")).to eq(10)
     end
+
+    it 'return addition when numbers seperated by newline' do 
+      expect(StringCalculator.add("3\n7,0")).to eq(10)
+    end
   end
 end
 
